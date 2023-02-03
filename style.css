@@ -1,0 +1,131 @@
+/* ----- 全局 ----- */
+::-webkit-scrollbar-thumb {
+    background-color: #5c5c5c !important;
+}
+/* 配色修改 */
+.icalingua-theme-holder {
+    --panel-header-bg: #292a2d !important; /* 顶栏 */
+    --panel-background: #292a2d !important; /* 背景 */
+    --panel-item-bg: #393b40 !important; /* 激活会话 */
+    --panel-item-bg-hover: #333538 !important; /* hover高亮会话 */
+    --panel-sidebar-bg: #292a2d !important; /*  */
+    
+    --chat-header-bg-color: #292a2d !important; /* 顶栏 */
+    --chat-content-bg-color: #000000 !important; /* 背景 */
+    --chat-message-bg-color-me: #6c6f85 !important; /* 我方气泡背景 */
+    --chat-message-bg-color-deleted: #626262 !important;
+    --chat-bg-color-input: #ffffff26 !important; /* 输入框 */
+    --chat-message-bg-color-date: #31373c !important; /* 时间戳背景 */
+    --chat-bg-scroll-icon: #2c2c2c !important; /*  快速回底按钮 */
+    --chat-icon-color-dropdown-scroll: #fff !important; /* 快速回底按钮 */
+    --chat-icon-color-document: #ffffff !important; /* 文件下载按钮 */
+    --chat-message-color-timestamp: #7d8e98; /* 忘了 */
+    --chat-message-bg-color-selected: #0c4249 !important; /* 消息选中 */
+}
+
+/* 弹出气泡 */
+.el-message {
+    min-width: 160px;
+    border-radius: 8px;
+    left: 70%;
+    padding: 10px 8px 10px 12px;
+    background-color: #1c2633;
+    border-color: rgb(256, 256, 256, 0.1);
+}
+.el-message--error {
+    background-color: #2b0303;
+    border-color: rgb(256, 256, 256, 0.1);
+}
+.el-message--success {
+    background-color: #1b342a;
+    border-color: rgb(256, 256, 256, 0.1);
+}
+.el-message--success .el-message__content {
+    color: #ffffff;
+}
+
+/* ----- 列表 ----- */
+.panel .content .root {
+    padding: 0 9px;
+    margin: 5px;
+    border-radius: 8px;
+}
+.panel .content div.entry {
+    padding: 7px 0;
+}
+/* 消息计数 */
+.el-badge__content {
+    border: none;
+}
+.el-badge__content {
+    background-color: #19bdd2;
+}
+.el-badge__content--info {
+    background-color: #444444;
+}
+/* 搜索框 */
+.el-input__inner {
+    border-radius: 8px;
+}
+/* 会话名 */
+.panel .content .name {
+    font-weight: normal;
+}
+/* 侧栏 */
+.el-aside .chat-group {
+    margin-top: 10px;
+    display: grid;
+    color: #a6a6a4;
+}
+.el-aside .chat-group > a {
+    margin: 0 0 5px 5px;
+}
+.el-aside .chat-group > a > div {
+    margin-top: 0;
+    padding: 8px 0;
+    border-radius: 8px;
+    transition: .2s;
+}
+.el-aside .chat-group > a:hover > div {
+    background-color: var(--panel-item-bg);
+}
+.el-aside .chat-group > a > div.selected {
+    color: #19bdd2;
+    background-color: var(--panel-item-bg-hover);
+}
+
+/* ----- 聊天 ----- */
+/* 主窗口 */
+.vac-card-window .vac-col-messages {
+    background-color: var(--chat-header-bg-color);
+}
+.vac-card-window .vac-container-scroll {
+    border-top-left-radius: 10px;
+    margin-top: 64px;
+}
+/*链接颜色*/
+.vac-card-window a {
+    color: #62c7d4;
+}
+/*图片消息*/
+.vac-message-image-mod {
+    border-radius: 8px;
+}
+/*日期提示*/
+.vac-card-date {
+    max-width: 78px !important;
+}
+.vac-card-info {
+    border-radius: 8px !important;
+}
+/* 文件下载 */
+.vac-svg-button.vac-icon-file {
+    background-color: #19bdd2;
+    padding: 1px 8px 0 12px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+/* 上滑下滑跳转 */
+path#vac-icon-dropdown {
+    fill:  #fff;
+}
